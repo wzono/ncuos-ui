@@ -13,9 +13,19 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "highlight.js": "^9.12.0",
+    "markdown-it": "^6.1.1",
+    "markdown-it-anchor": "^2.5.0",
+    "markdown-it-container": "^2.0.0",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.2",
+    "vue-markdown-loader": "^2.4.0",
+    "vue-router": "^3.0.1",
+    "cheerio": "^1.0.0-rc.2"
   },
   "devDependencies": {
+    "sass-loader": "^6.0.7",
+    "node-sass": "^4.5.3",
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
@@ -80,7 +90,7 @@
     "webpack-merge": "^4.1.0"
   },
   "engines": {
-    "node": ">= 6.0.0",
+    "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
   "browserslist": [

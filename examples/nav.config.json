@@ -1,0 +1,17 @@
+{
+  "index": [
+    {
+      "desc": "ndex",
+      "path": "/",
+      "type": "pages",
+      "name": "Index"
+    }
+  ],
+  "test": [
+    {
+      "desc": "test",
+      "path": "/test",
+      "name": "test"
+    }
+  ]
+}
