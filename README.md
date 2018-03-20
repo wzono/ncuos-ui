@@ -1,5 +1,27 @@
-#NCUOS-UI
+# ncuos-ui
 
-> 南昌大学家园工作室云家园项目UI组件库
+> UI components kit for NCUOS@NCUHOME
 
-基于Vue.js开发的UI组件库，用于重构云家园前端代码。
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
