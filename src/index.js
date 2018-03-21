@@ -1,19 +1,23 @@
 // 在这里import组件
-import {} from '';
+import {Usbutton} from '../packages/button';
 
 // 在这里声明组件
-const components = {};
-
-// 组件库名称
-const nos = {...components};
+const components = [
+  Usbutton
+];
 
 // Vue插件安装命令
 const install = function (Vue, opts = {}) {
-  // 暂时没弄清楚这条语句是什么意思
-  // if (install.installed) return
-  Object.keys(nos).forEach(key => {
-    Vue.component(key, nos[key]);
-    // 在下面添加命令组件
+  components.map(component => {
+    Vue.component(component.name, component);
+    // 以下是服务组件
+    // Vue.prototype.$loading = Loading.service;
+    // Vue.prototype.$msgbox = MessageBox;
+    // Vue.prototype.$alert = MessageBox.alert;
+    // Vue.prototype.$confirm = MessageBox.confirm;
+    // Vue.prototype.$prompt = MessageBox.prompt;
+    // Vue.prototype.$notify = Notification;
+    // Vue.prototype.$message = Message; 
   });
 };
 

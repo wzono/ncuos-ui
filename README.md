@@ -12,23 +12,42 @@
   <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
 </p>
 
-## Build Setup
+version: 0.0.1
 
-``` bash
-# install dependencies
-npm install
+## 项目结构
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
+```bash
+.
+├── build
+├── config
+├── examples
+├── index.html
+├── LICENSE
+├── node_modules
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+├── static
+└── test
 ```
 
+- 原src目录改为example目录，用于展示文档
+- src下存放各个组件
+
+## 命名规范
+
+### 自定义标签&组件命名
+
+（ncuos-前缀?）
+```HTML
+<ncuos-button>
+    click me
+</ncuos-button>
+```
+单个组件文件夹命名请大写
+
+<<<<<<< HEAD
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 # test
@@ -36,4 +55,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 项目名: NCUOS-UI
 
 Version: v0.0.1
+
+### CSS？
+待讨论
+
+要讨论的还很多，，写不下去了。。。
 

@@ -1,0 +1,16 @@
+// 前缀
+$prefix: ncuos-;
+
+// 颜色相关
+
+// 布局相关
+$container-max-width: 1200px;
+$container-columns: 24;
+$grid-gutter-width: 30px;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
