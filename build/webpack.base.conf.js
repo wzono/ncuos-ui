@@ -127,10 +127,10 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
-      },
+      // {
+      //   test: /\.scss$/,
+      //   loaders: ['style-loader', 'css-loader', 'sass-loader']
+      // },
       {
         test: /\.md$/,
         loader: 'vue-markdown-loader',
