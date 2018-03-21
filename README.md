@@ -43,7 +43,6 @@ version: 0.0.1
 ```HTML
 <us-button>
     click me
-</us、
 <us-button>
 ```
 单个组件文件夹命名均为小写
