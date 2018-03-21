@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://coding.net/u/Futurer/p/ncuos-ui/git">
-    <img width="200" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
+    <img width="200" src="https://coding.net/u/Futurer/p/ncuos-ui/git/raw/develop/examples/assets/logo.png">
   </a>
 </p>
 <p align="center">
