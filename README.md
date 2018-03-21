@@ -1,34 +1,41 @@
-# ncuos-ui
 
-> UI components kit for NCUOS@NCUHOME
+# 项目名： ncuosUI or ncuhomeUI
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-# test
-
-项目名： ncuosUI or ncuhomeUI
 version: 0.0.1
 
+## 项目结构
 
+```bash
+.
+├── build
+├── config
+├── examples
+├── index.html
+├── LICENSE
+├── node_modules
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+├── static
+└── test
+```
+
+- 原src目录改为example目录，用于展示文档
+- src下存放各个组件
+
+## 命名规范
+
+### 自定义标签&组件命名
+
+（ncuos-前缀?）
+```HTML
+<ncuos-button>
+    click me
+</ncuos-button>
+```
+
+### CSS？
+待讨论
+
+写不下去了。。。
