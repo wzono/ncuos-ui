@@ -1,6 +1,16 @@
-# ncuos-ui
+# NCUOS-UI
 
-> UI components kit for NCUOS@NCUHOME
+`NCUOS-UI` 基于 `Vue.js 2.0` 的前段 UI 组件库，主要用于快速开发家园工作室相关产品
+
+<p align="center">
+  <a href="https://coding.net/u/Futurer/p/ncuos-ui/git">
+    <img width="200" src="https://github.com/VV-UI/VV-UI/blob/master/examples/assets/img/logo.png">
+  </a>
+</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-5.6.0-brightgreen.svg" alt="npm version"></a> 
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+</p>
 
 ## Build Setup
 
@@ -14,14 +24,9 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
 # run unit tests
 npm run unit
 
-# run all tests
-npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
@@ -30,5 +35,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 项目名： ncuosUI or ncuhomeUI
 version: 0.0.1
-
 
