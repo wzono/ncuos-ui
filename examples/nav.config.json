@@ -1,7 +1,7 @@
 {
   "index": [
     {
-      "desc": "ndex",
+      "desc": "index",
       "path": "/",
       "type": "pages",
       "name": "Index"
@@ -12,6 +12,22 @@
       "desc": "test",
       "path": "/test",
       "name": "test"
+    }
+  ],
+  "components": [
+    {
+      "desc": "components",
+      "path": "/components",
+      "type": "pages",
+      "name": "Components"
+    }
+  ],
+  "layout": [
+    {
+      "desc": "layout",
+      "path": "/layout",
+      "type": "pages",
+      "name": "Layout"
     }
   ]
 }
