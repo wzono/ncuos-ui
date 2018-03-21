@@ -87,7 +87,10 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      main: resolve('src'),
+      packages: resolve('packages'),
+      examples: resolve('examples'),
+      'ncuos-ui': path.resolve(__dirname, '../')
     }
   },
   module: {

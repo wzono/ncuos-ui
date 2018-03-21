@@ -1,11 +1,17 @@
 <template>
-  <div class="hello">
+  <div class="index">
     <h1>Welcome to <span class="ui-name">{{ msg }}</span></h1>
     <img src="../assets/logo.png" alt="家园工作室">
     <p>Start from 2018-03-21</p>
     <ul>
       <li>
         <router-link to="/test">Markdown Test Page</router-link>
+      </li>
+      <li>
+        <router-link to="/components">Components Test Page</router-link>
+      </li>
+      <li>
+        <router-link to="/layout">Layout Test Page</router-link>
       </li>
     </ul>
   </div>
@@ -24,7 +30,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" type="text/scss">
-  .hello {
+  .index {
     text-align: center;
     h1, h2 {
       font-weight: normal;

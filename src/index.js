@@ -1,9 +1,9 @@
 // 在这里import组件
-import {Usbutton} from '../packages/button'
+import Button from 'packages/button/index'
 
 // 在这里声明组件
 const components = [
-  Usbutton
+  Button
 ]
 
 // Vue插件安装命令
@@ -26,4 +26,11 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
-module.exports.default = module.exports
+export default {
+  version: '0.0.1',
+  install,
+  Button
+}
+
+// module.exports.default is only read
+// 直接 export default ，并且要把install同时export出来，在main.js中注册，我们才能在全局通过引入 /[compoent]/index 引入组件

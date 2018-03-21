@@ -1,21 +1,21 @@
 <template>
     <button>
-        {{msg}}
+        <slot></slot>
     </button>
 </template>
 <script>
 export default {
-  name: "us-button",
+  name: 'us-button',
   props: {
     type: {
       type: String,
-      default: "default"
-    },
+      default: 'default'
+    }
   },
   data() {
     return {
-      msg: "i'm a button"
-    };
+
+    }
   }
-};
+}
 </script>
