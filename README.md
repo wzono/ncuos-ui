@@ -8,8 +8,8 @@
   </a>
 </p>
 <p align="center">
-<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-5.6.0-brightgreen.svg" alt="npm version"></a> 
-  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+    <img src="https://img.shields.io/badge/npm-5.6.0-brightgreen.svg" alt="npm version">
+    <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
 </p>
 
 version: 0.0.1
@@ -39,15 +39,15 @@ version: 0.0.1
 
 ### 自定义标签&组件命名
 
-（ncuos-前缀?）
+（us-前缀）
 ```HTML
-<ncuos-button>
+<us-button>
     click me
-</ncuos-button>
+</us、
+<us-button>
 ```
-单个组件文件夹命名请大写
+单个组件文件夹命名均为小写
 
-<<<<<<< HEAD
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 # test
@@ -57,6 +57,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 Version: v0.0.1
 
 ### CSS？
+采用`sass`预处理器
+<p align="center">
+<img src="https://img.shields.io/badge/sass-4.5.3-brightgreen.svg" alt="npm version">
+</p>
 待讨论
 
 要讨论的还很多，，写不下去了。。。
