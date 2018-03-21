@@ -7,7 +7,7 @@
 
 <div class="demo-block">
     <h1>这里是一段html代码</h1>
-    <button>test</button>
+    <button onclick="alert('hi-ncuosUI')">test</button>
 </div>
 
 ```
@@ -15,7 +15,7 @@
 
 <div class="demo-block">
     <h1>这里是一段html代码</h1>
-    <button>test</button>
+    <button onclick="alert('hi-ncuosUI')">test</button>
 </div>
 
 

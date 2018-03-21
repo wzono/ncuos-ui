@@ -1,5 +1,16 @@
+# NCUOS-UI
 
-# 项目名： ncuosUI or ncuhomeUI
+`NCUOS-UI` 基于 `Vue.js 2.0` 的前段 UI 组件库，主要用于快速开发家园工作室相关产品
+
+<p align="center">
+  <a href="https://coding.net/u/Futurer/p/ncuos-ui/git">
+    <img width="500" src="https://coding.net/u/Futurer/p/ncuos-ui/git/raw/develop/examples/assets/logo.png">
+  </a>
+</p>
+<p align="center">
+<a href="https://www.npmjs.com/package/vvui"><img src="https://img.shields.io/badge/npm-5.6.0-brightgreen.svg" alt="npm version"></a> 
+  <img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+</p>
 
 version: 0.0.1
 
@@ -34,8 +45,9 @@ version: 0.0.1
     click me
 </ncuos-button>
 ```
+单个组件文件夹命名请大写
 
 ### CSS？
 待讨论
 
-写不下去了。。。
+要讨论的还很多，，写不下去了。。。
