@@ -7,6 +7,7 @@ import demoBlock from './components/demo-block'
 import 'normalize.css'
 import 'highlight.js/styles/github-gist.css'
 import Hljs from 'highlight.js'
+import '../src/styles/index.scss'
 
 Vue.directive('highlightjs', el => {
   let blocks = el.querySelectorAll('pre code')
