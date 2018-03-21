@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "Ncuosbutton",
+  name: "us-button",
   props: {
     type: {
       type: String,
