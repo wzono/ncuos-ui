@@ -4,10 +4,39 @@
     <hr>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          aaa
+        <div class="col-md-12">
+          col-md-12
         </div>
-        <div class="col-md-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          col-md-6
+        </div>
+        <div class="col-md-6">
+          col-md-6
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          col-md
+        </div>
+        <div class="col-md">
+          col-md
+        </div>
+        <div class="col-md">
+          col-md
+        </div>
+        <div class="col-md">
+          col-md
+        </div>
+        <div class="col-md">
+          col-md
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-6">
+          col-md-6 offset-md-6
+        </div>
       </div>
     </div>
   </div>
@@ -47,6 +76,8 @@ export default {
   }
   [class^=col-] {
     border-radius: 4px;
+    height: 36px;
+    line-height: 36px;
     background-color: rgba(86,61,124,.15);
     border: 1px solid rgba(86,61,124,.2);
   }
