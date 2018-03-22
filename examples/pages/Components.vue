@@ -23,11 +23,7 @@
 </template>
 
 <script>
-
-  import Button from 'packages/button/index'
-
   export default {
-    components: {Button},
     name: 'Components',
     data () {
       return {
