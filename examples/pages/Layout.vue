@@ -2,7 +2,14 @@
   <div class="hello">
     <h1>布局测试页面</h1>
     <hr>
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          aaa
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,25 +45,10 @@ export default {
       }
     }
   }
-  .card {
-    width: 100%;
-    border: 1px solid #ebeef5;
+  [class^=col-] {
     border-radius: 4px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-    padding: 18px 20px;
-    text-align: left;
-    margin: 24px 0;
-    .header {
-      padding: 18px 20px;
-      border-bottom: 1px solid #ebeef5;
-      box-sizing: border-box;
-      font-weight: 700;
-    }
-    .body {
-      height: auto;
-      padding: 18px;
-      padding-left: 20px;
-    }
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
   }
 }
 </style>
