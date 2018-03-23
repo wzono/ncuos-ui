@@ -4,7 +4,7 @@
     <hr>
     <div class="container">
       <us-row>
-        <us-col :sm="3" :md="6">aaa</us-col>
+        <us-col :span="3" :sm="3" :md="6">aaa</us-col>
       </us-row>
     </div>
   </div>
