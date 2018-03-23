@@ -8,10 +8,10 @@
 export default {
   name: 'us-col',
   props: {
-    xs: [Number, Object],
     sm: [Number, Object],
     md: [Number, Object],
     lg: [Number, Object],
+    xl: [Number, Object],
     offset: [Number, String],
     push: [Number, String],
     pull: [Number, String],
