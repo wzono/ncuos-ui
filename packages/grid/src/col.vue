@@ -13,8 +13,6 @@ export default {
     lg: [Number, Object],
     xl: [Number, Object],
     offset: [Number, String],
-    push: [Number, String],
-    pull: [Number, String],
     span: [Number, String],
     order: [Number, String]
   },

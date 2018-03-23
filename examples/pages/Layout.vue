@@ -9,6 +9,10 @@
       <us-row>
         <us-col class="test" :md="{span: 4, offset: 4}">col-md-4 col-offset-4</us-col>
       </us-row>
+      <us-row>
+        <us-col class="test" :span="3" :offset="2" :order="2">col-3 offset-2 order-2</us-col>
+        <us-col class="test" :span="4">span: 4 unordered</us-col>
+      </us-row>
     </div>
   </div>
 </template>
