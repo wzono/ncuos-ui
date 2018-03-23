@@ -3,41 +3,9 @@
     <h1>布局测试页面</h1>
     <hr>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          col-md-12
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          col-md-6
-        </div>
-        <div class="col-md-6">
-          col-md-6
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          col-md
-        </div>
-        <div class="col-md">
-          col-md
-        </div>
-        <div class="col-md">
-          col-md
-        </div>
-        <div class="col-md">
-          col-md
-        </div>
-        <div class="col-md">
-          col-md
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-6">
-          col-md-6 offset-md-6
-        </div>
-      </div>
+      <us-row>
+        <us-col :xs="3" :md="6">aaa</us-col>
+      </us-row>
     </div>
   </div>
 </template>

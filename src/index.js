@@ -1,14 +1,18 @@
 // 在这里import组件
 import Button from 'packages/button/index'
+import { Col, Row } from 'packages/grid/index'
 
 // 在这里声明组件
 const components = [
-  Button
+  Button,
+  Col,
+  Row
 ]
 
 // Vue插件安装命令
 const install = function (Vue, opts = {}) {
   components.map(component => {
+    console.log(component)
     Vue.component(component.name, component)
     // 以下是服务组件
     // Vue.prototype.$loading = Loading.service;
@@ -21,6 +25,12 @@ const install = function (Vue, opts = {}) {
   })
 }
 
+// const install = function (Vue, opts = {}) {
+//   Object.keys(components).forEach(key => {
+//     Vue.component(components[key].name, components[key])
+//   })
+// }
+
 // istanbul ignore if
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
@@ -29,7 +39,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version: '0.0.1',
   install,
-  Button
+  Button,
+  Row,
+  Col
 }
 
 // module.exports.default is only read
