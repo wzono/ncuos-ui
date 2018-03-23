@@ -12,7 +12,6 @@ const components = [
 // Vue插件安装命令
 const install = function (Vue, opts = {}) {
   components.map(component => {
-    console.log(component)
     Vue.component(component.name, component)
     // 以下是服务组件
     // Vue.prototype.$loading = Loading.service;
@@ -24,12 +23,6 @@ const install = function (Vue, opts = {}) {
     // Vue.prototype.$message = Message;
   })
 }
-
-// const install = function (Vue, opts = {}) {
-//   Object.keys(components).forEach(key => {
-//     Vue.component(components[key].name, components[key])
-//   })
-// }
 
 // istanbul ignore if
 if (typeof window !== 'undefined' && window.Vue) {
