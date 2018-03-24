@@ -15,6 +15,7 @@
 
 <script>
 export default {
+  name: 'index',
   data() {
     return {
       height: document.documentElement.clientHeight
