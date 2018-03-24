@@ -1,0 +1,12 @@
+// 可能会用到的公共样式
+.layout {
+  .purple {
+    background-color: $color-purple;
+    &-dark {
+      background-color: $color-purple-dark;
+    }
+    &-light {
+      background-color: $color-purple-light;
+    }
+  }
+}

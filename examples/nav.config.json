@@ -1,17 +1,32 @@
 {
-  "index": [
+  "开发指南": [
     {
-      "desc": "ndex",
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "index",
       "path": "/",
-      "type": "pages",
-      "name": "Index"
+      "type": "pages"
     }
   ],
-  "test": [
+  "组件": [
     {
-      "desc": "test",
-      "path": "/test",
-      "name": "test"
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Layout 布局",
+          "name": "layout",
+          "path": "/layout"
+        },
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        }
+      ]
     }
   ]
 }
