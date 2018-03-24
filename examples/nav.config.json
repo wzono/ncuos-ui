@@ -7,6 +7,13 @@
       "name": "Index"
     }
   ],
+  "docs": [
+    {
+      "desc": "devDocs",
+      "path": "/dev",
+      "name": "dev"
+    }
+  ],
   "test": [
     {
       "desc": "test",
