@@ -69,7 +69,7 @@
   ·
   ├── button
   │   ├── src
-  │   │   └── main.vue
+  │   │   └── button.vue
   └── index.js
   ```
 
