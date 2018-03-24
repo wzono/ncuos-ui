@@ -25,7 +25,7 @@ export default {
           [`offset-${this.offset}`]: this.offset 
         }
       ]
-      const sizes = ['xs', 'sm', 'md', 'lg']
+      const sizes = ['sm', 'md', 'lg', 'xl']
       sizes.forEach(size => {
         if (typeof this[size] === 'number') {
           classList.push(`col-${size}-${this[size]}`)

@@ -4,7 +4,12 @@
     <hr>
     <div class="container">
       <us-row>
-        <us-col class="test" :span="3" :sm="3" :md="6">col-sm-3 col-md-6</us-col>
+        <us-col class="test" :span="6">col-6</us-col>
+        <us-col class="test" :span="6">col-6</us-col>
+      </us-row>
+      <us-row>
+        <us-col class="test" :span="12" :sm="12" :md="6" :lg="5" :xl="4">col-12 sm-12 md-6 lg-5 xl-4</us-col>
+        <us-col class="test" :span="12" :sm="12" :md="6" :lg="5" :xl="4">col-12 sm-12 md-6 lg-5 xl-4</us-col>
       </us-row>
       <us-row>
         <us-col class="test" :md="{span: 4, offset: 4}">col-md-4 col-offset-4</us-col>
