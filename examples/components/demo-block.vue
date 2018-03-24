@@ -1,7 +1,7 @@
 
 <template>
   <div class="docs-demo-wrapper">
-    <div :style="{height: isExpand ? 'auto' : '0'}" class="demo-container">
+    <div :class="{'full': isExpand}" class="demo-container">
       <div span="14">
         <div class="docs-demo docs-demo--expand">
           <div class="highlight-wrapper">
@@ -11,7 +11,6 @@
       </div>
     </div>
     <span class="docs-trans docs-demo__triangle" @click="toggle">{{isExpand ? '隐藏代码' : '显示代码'}}</span>
-
   </div>
 </template>
 
@@ -20,7 +19,7 @@
     name: 'demo-block',
     data () {
       return {
-        isExpand: true
+        isExpand: false
       }
     },
     methods: {
@@ -33,12 +32,13 @@
 
 <style lang="scss">
   .docs-demo-wrapper {
-    padding: 50px;
     .demo-container {
-      transition: max-height .3s ease;
+      max-height: 0;
+      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
       overflow: hidden;
-      &:hover {
-        background: #f6f8fa;
+      &.full {
+        max-height: 1000px;
+        transition: max-height 1s ease-in-out;
       }
     }
     .docs-demo {
@@ -58,14 +58,14 @@
       width: 100%;
       text-align: center;
       display: inline-block;
-      color: #C5D9E8;
+      color: #409eff;
       font-size: 12px;
       padding: 10px 0;
-      background-color: #FAFBFC;
+      // border-top: 1px solid #ebebeb;
+      background-color: #f6f8fa;
       cursor: pointer;
     }
     .docs-demo__code,
-    .highlight-wrapper,
     .docs-demo__meta {
       padding: 0 20px;
       overflow-y: auto;
