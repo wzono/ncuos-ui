@@ -2,7 +2,18 @@
   <div class="hello">
     <h1>布局测试页面</h1>
     <hr>
-    
+    <div class="container">
+      <us-row>
+        <us-col class="test" :span="3" :sm="3" :md="6">col-sm-3 col-md-6</us-col>
+      </us-row>
+      <us-row>
+        <us-col class="test" :md="{span: 4, offset: 4}">col-md-4 col-offset-4</us-col>
+      </us-row>
+      <us-row>
+        <us-col class="test" :span="3" :offset="2" :order="2">col-3 offset-2 order-2</us-col>
+        <us-col class="test" :span="4">span: 4 unordered</us-col>
+      </us-row>
+    </div>
   </div>
 </template>
 
@@ -19,6 +30,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" type="text/scss">
+.test {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
 .hello {
   text-align: center;
   * {
@@ -36,26 +53,6 @@ export default {
       a {
         color: #42b983;
       }
-    }
-  }
-  .card {
-    width: 100%;
-    border: 1px solid #ebeef5;
-    border-radius: 4px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-    padding: 18px 20px;
-    text-align: left;
-    margin: 24px 0;
-    .header {
-      padding: 18px 20px;
-      border-bottom: 1px solid #ebeef5;
-      box-sizing: border-box;
-      font-weight: 700;
-    }
-    .body {
-      height: auto;
-      padding: 18px;
-      padding-left: 20px;
     }
   }
 }

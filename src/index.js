@@ -1,9 +1,12 @@
 // 在这里import组件
 import Button from 'packages/button/index'
+import { Col, Row } from 'packages/grid/index'
 
 // 在这里声明组件
 const components = [
-  Button
+  Button,
+  Col,
+  Row
 ]
 
 // Vue插件安装命令
@@ -29,7 +32,9 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   version: '0.0.1',
   install,
-  Button
+  Button,
+  Row,
+  Col
 }
 
 // module.exports.default is only read
