@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: 'index',
   data () {
     return {
       msg: 'ncuosUI'
