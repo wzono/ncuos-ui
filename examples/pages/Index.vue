@@ -1,58 +1,83 @@
 <template>
-  <div class="index">
-    <h1>Welcome to <span class="ui-name">{{ msg }}</span></h1>
-    <img src="../assets/logo.png" alt="家园工作室">
-    <p>Start from 2018-03-21</p>
-    <ul>
-      <li>
-        <router-link to="/test">Markdown Test Page</router-link>
-      </li>
-      <li>
-        <router-link to="/components">Components Test Page</router-link>
-      </li>
-      <li>
-        <router-link to="/layout">Layout Test Page</router-link>
-      </li>
-    </ul>
+  <div class="pg-index">
+    <div class="index-container">
+      <img src="../assets/logo.png">
+      <p>一款轻量级、模块化的前端 UI 组件库</p>
+    </div>
+    <div class="separate-panel">
+      <div class="about">
+        <router-link :to="{name: 'giud'}">开始使用</router-link>
+        <a class="btn-github" href="#">Coding</a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Index',
-  data () {
+  data() {
     return {
-      msg: 'ncuosUI'
+      height: document.documentElement.clientHeight
     }
   }
-}
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" type="text/scss">
-  .index {
+<style lang="scss">
+.pg-index {
+  .index-container {
+    width: 960px;
+    margin: 0 auto;
     text-align: center;
-    h1, h2 {
-      font-weight: normal;
+    padding: 100px 0;
+    p {
+      margin-top: 56px;
+      color: #8994c6;
+      font-size: 32px;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      li {
+  }
+  .separate-panel {
+    position: relative;
+    margin-top: 150px;
+    .about {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      top: 20px;
+      z-index: 9;
+      background: #fff;
+      text-align: center;
+      a {
+        color: #fff;
+        background-image: linear-gradient(90deg, #00aeff 0%, #3369e7 100%);
+        box-shadow: 0 2px 6px 0 rgba(51, 105, 231, 0.4);
         display: inline-block;
-        margin: 0 10px;
-        a {
-          color: #42b983;
-        }
+        width: 190px;
+        height: 56px;
+        margin: 0 35px;
+        font-size: 18px;
+        line-height: 56px;
+        border-radius: 28px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .btn-github {
+        color: #316de9;
+        border: 1px solid #2f6ee9;
+        background: #fff;
+        box-shadow: none;
       }
     }
-    img {
-      width: 300px;
-    }
-    .ui-name {
-      color: #44ceff;
-      font-weight: bold;
-      font-family: monospace;
-    }
   }
+  .separate-panel:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    box-shadow: 0 -4px 30px 0 #dfe1e6;
+    transform: skewY(-4deg);
+  }
+}
 </style>

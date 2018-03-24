@@ -23,7 +23,7 @@
 @mixin make-row() {
   display: flex;
   flex-wrap: wrap;
-  margin-right: ($grid-gutter-width / -2);
+  margin-right: ($grid-gutter-width / 2);
   margin-left: ($grid-gutter-width / -2);
 }
 

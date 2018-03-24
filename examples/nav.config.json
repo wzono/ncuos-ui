@@ -1,40 +1,32 @@
 {
-  "index": [
+  "开发指南": [
     {
-      "desc": "index",
+      "name": "giud",
+      "path": "/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "index",
       "path": "/",
-      "type": "pages",
-      "name": "Index"
+      "type": "pages"
     }
   ],
-  "docs": [
+  "组件": [
     {
-      "desc": "devDocs",
-      "path": "/dev",
-      "name": "dev"
-    }
-  ],
-  "test": [
-    {
-      "desc": "test",
-      "path": "/test",
-      "name": "test"
-    }
-  ],
-  "components": [
-    {
-      "desc": "components",
-      "path": "/components",
-      "type": "pages",
-      "name": "Components"
-    }
-  ],
-  "layout": [
-    {
-      "desc": "layout",
-      "path": "/layout",
-      "type": "pages",
-      "name": "Layout"
+      "desc": "基础组件",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Layout 布局",
+          "name": "layout",
+          "path": "/layout"
+        },
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/button"
+        }
+      ]
     }
   ]
 }
