@@ -22,6 +22,7 @@
         <us-button calss="us-button"></us-button>
         <us-button calss="us-button" type='primary'></us-button>
         <us-button class="us-button" type="danger"></us-button>
+        <us-button class="us-button" type="primary" plain>
 ```
 :::
 
