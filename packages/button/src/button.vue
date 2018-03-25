@@ -1,7 +1,7 @@
 <template>
   <button @click="$emit('click')" class="us-button" :disabled="disabled" :class="[
     'us-button--type-'+type,
-    {'is-plain': checkPlain, 'is-disabled': disabled},
+    {'is-plain': plain, 'is-disabled': disabled},
     'us-button--size-'+size
     ]">
     <!-- 在考虑是否要控制折行 -->
@@ -13,12 +13,12 @@
 export default {
   name: "us-button",
   props: {
-    // default primary danger 
+    // default primary danger
     type: {
       type: String,
       default: "default"
     },
-    // small, normal, large	
+    // small, normal, large
     size: {
       type: String,
       default: "normal"
@@ -27,18 +27,11 @@ export default {
       type: String,
       default: ""
     },
-    plain:{
-      type:Boolean
-    },
-    disabled: Boolean,
-  },
-  computed:{
-  checkPlain(){
-    return this.plain
-  }    
+    plain: Boolean,
+    disabled: Boolean
   },
   data() {
-
+    return {};
   }
 };
 </script>
