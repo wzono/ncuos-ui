@@ -14,6 +14,7 @@
         <us-col :xs="6" class="purple" style="height: 36px; text-align: center; border-radius: 5px; line-height: 36px;"></us-col>
         <us-col :xs="6" class="purple-dark" style="height: 36px; text-align: center; border-radius: 5px; line-height: 36px;"></us-col>
       </us-row>
+      <!-- <button @click="$notify({title: 'TEST', message: 'Test successfully.'})">test</button> -->
     </div>
   </div>
   <div class="code-display">
