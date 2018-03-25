@@ -1,9 +1,10 @@
 <template>
   <button @click="$emit('click')" class="us-button" :disabled="disabled" :class="[
     'us-button--type-'+type,
-    {'is-plain': plain, 'is-disabled': disabled},
+    {'is-plain': checkPlain, 'is-disabled': disabled},
     'us-button--size-'+size
     ]">
+    <!-- 在考虑是否要控制折行 -->
     <!-- <i v-if="icon !== ''" :class="icon"></i> -->
     <slot></slot>
   </button>
@@ -20,20 +21,24 @@ export default {
     // small, normal, large	
     size: {
       type: String,
-      default: "default"
+      default: "normal"
     },
     icon: {
       type: String,
       default: ""
     },
-    plain: Boolean,
+    plain:{
+      type:Boolean
+    },
     disabled: Boolean,
-    round: Boolean
+  },
+  computed:{
+  checkPlain(){
+    return this.plain
+  }    
   },
   data() {
-    return {
-      msg: "button"
-    };
+
   }
 };
 </script>
