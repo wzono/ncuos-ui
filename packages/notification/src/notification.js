@@ -36,7 +36,7 @@ const Notification = function(options) {
   instance.verticalOffset = verticalOffset
   instances.push(instance)
   return instance.vm
-}
+};
 
 ['success', 'warning', 'info', 'error'].forEach(type => {
   Notification[type] = options => {
