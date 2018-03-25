@@ -1,6 +1,7 @@
 // 在这里import组件
 import Button from 'packages/button/index'
 import { Col, Row } from 'packages/grid/index'
+import Notification from 'packages/notification/index'
 
 // 在这里声明组件
 const components = [
@@ -19,7 +20,7 @@ const install = function (Vue, opts = {}) {
     // Vue.prototype.$alert = MessageBox.alert;
     // Vue.prototype.$confirm = MessageBox.confirm;
     // Vue.prototype.$prompt = MessageBox.prompt;
-    // Vue.prototype.$notify = Notification;
+    Vue.prototype.$notify = Notification
     // Vue.prototype.$message = Message;
   })
 }
