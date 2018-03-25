@@ -1,9 +1,31 @@
 .us-button {
-    &.primary{
-        
+  &--type {
+    &-default {
+      border: 1px solid $default;
+      background-color: $default;
     }
-  &.disable {
-      background-color: #666;
-    
+    &-primary {
+      border: 1px solid $primary;
+      background-color: $primary;
+    }
+    &-danger {
+      border: 1px solid $danger;
+      background-color: $danger;
+    }
+  }
+  &--size {
+    &-small {}
+    &-normal {
+      height: 20px;
+      width: 50px;
+    }
+    &-large {}
+  }
+  &is-plain {
+    background-color: white;
+  }
+  //   感觉怪怪的。。。待测试
+  &.is-disable {
+    background-color: #666;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <button @click="$emit('click')" class="us-button" :disabled="disabled" :class="[
-    'us-button--'+type,
+    'us-button--type-'+type,
     {'is-plain': plain, 'is-disabled': disabled},
     'us-button--size-'+size
     ]">
@@ -12,10 +12,12 @@
 export default {
   name: "us-button",
   props: {
+    // default primary danger 
     type: {
       type: String,
       default: "default"
     },
+    // small, normal, large	
     size: {
       type: String,
       default: "default"
