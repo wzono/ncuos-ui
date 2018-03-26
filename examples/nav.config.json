@@ -25,6 +25,11 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
+        },
+        {
+          "desc": "Modal 模态框",
+          "name": "modal",
+          "path": "/modal"
         }
       ]
     }
