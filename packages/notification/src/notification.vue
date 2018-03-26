@@ -10,23 +10,20 @@
       role="alert"
     >
       <i
-        class="el-notification__icon"
+        class="us-notification__icon"
         :class="[ typeClass, iconClass ]"
         v-if="type || iconClass">
       </i>
-      <div class="el-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
-        <h2 class="el-notification__title" v-text="title"></h2>
-        <div class="el-notification__content" v-show="message">
+      <div class="us-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
+        <h2 class="us-notification__title" v-text="title"></h2>
+        <div class="us-notification__content" v-show="message">
           <slot>
             <p v-if="!dangerouslyUseHTMLString">{{ message }}</p>
             <p v-else v-html="message"></p>
           </slot>
         </div>
-        <div
-          class="el-notification__closeBtn el-icon-close"
-          v-if="showClose"
-          @click.stop="close"></div>
       </div>
+      <div class="us-notification__control" v-if="showClose" @click.stop="close">&times;</div>
     </div>
   </transition>
 </template>
