@@ -26,12 +26,17 @@
 
 :::demo
 ```html
-<div class="container">
-  <us-row>
-    <us-col :md="6" class="purple" style="height: 36px; text-align: center; border-radius: 5px; line-height: 36px;"></us-col>
-    <us-col :md="6" class="purple-dark" style="height: 36px; text-align: center; border-radius: 5px; line-height: 36px;"></us-col>
-  </us-row>
-</div>
+<us-button @click="showModal = true">打开Modal</us-button>
+<us-modal v-if="showModal" @close="showModal = false"></us-modal>
+<script>
+  export default {
+    data () {
+      return {
+        showModal: false
+      }
+    }
+  }
+</script>
 ```
 :::
 
