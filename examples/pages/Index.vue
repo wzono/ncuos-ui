@@ -15,11 +15,11 @@
 
 <script>
 export default {
-  name: 'index',
+  name: "index",
   data() {
     return {
       height: document.documentElement.clientHeight
-    }
+    };
   }
 };
 </script>

@@ -1,0 +1,29 @@
+.us-button {
+    border-radius: 3px;
+  &--type {
+    &-default {
+      border: 1px solid #adb5bd;
+      background-color: white;
+    }
+    &-primary {
+      border: 1px solid blue;
+      background-color: blue;
+    }
+    &-danger {
+      border: 1px solid pink;
+      background-color: pink;
+    }
+  }
+  &--size {
+    &-small {}
+    &-normal {
+      height: 30px;
+      width: 70px;
+    }
+    &-large {}
+  }
+  &.is-plain {
+    background-color: white;
+  }
+  //   感觉怪怪的。。。待测试
+}
