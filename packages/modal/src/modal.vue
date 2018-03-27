@@ -5,7 +5,7 @@
         <div class="us-modal__container">
           <div class="us-modal__header">
             <slot name="header">
-              标题
+              {{ title }}
             </slot>
             <div class="us-modal__close" @click="$emit('close')">&times;</div>
           </div>
