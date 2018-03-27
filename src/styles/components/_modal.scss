@@ -12,13 +12,19 @@
     display: table-cell;
     .us-modal__container {
       max-width: 600px;
-      margin: 0px auto;
+      width: 600px;
+      margin: 0 auto;
       margin-top: 30px;
       background-color: #fff;
       border-radius: 2px;
       box-shadow: 0 1px 3px rgba(0,0,0,.3);
       transition: all .3s ease;
       border-radius: 6px;
+      @media (max-width:  375px) {
+        width: auto;
+        margin: 10px;
+        margin-top: 30px;
+      }
       .us-modal__header {
         border-bottom: 1px solid #e9eaec;
         padding: 14px 16px;
