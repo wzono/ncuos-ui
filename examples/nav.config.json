@@ -1,8 +1,8 @@
 {
   "开发指南": [
     {
-      "name": "giud",
-      "path": "/giud",
+      "name": "guid",
+      "path": "/guid",
       "desc": "介绍"
     },
     {
@@ -14,7 +14,7 @@
   "组件": [
     {
       "desc": "基础组件",
-      "path": "/component",
+      "path": "",
       "items": [
         {
           "desc": "Layout 布局",
@@ -25,11 +25,22 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
-        },
+        }
+      ]
+    },
+    {
+      "desc": "模式组件",
+      "path": "",
+      "items": [
         {
           "desc": "Modal 模态框",
           "name": "modal",
           "path": "/modal"
+        },
+        {
+          "desc": "Notification 消息",
+          "name": "notification",
+          "path": "/notification"
         }
       ]
     }
