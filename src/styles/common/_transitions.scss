@@ -15,45 +15,16 @@
 }
 
 // Modal组件
-// .us-modal-enter {
-//   opacity: 0;
-// }
-
-// .us-modal-leave-active {
-//   opacity: 0;
-// }
-
-// .us-modal-enter .us-modal__container,
-// .us-modal-leave-active .us-modal__container {
-//   transform: translate3d(0, -100%, 0);
-// }
-
-.us-modal-enter-active {
-  animation: us-modal-in .3s;
+.us-modal-enter {
+  opacity: 0;
 }
 
 .us-modal-leave-active {
-  animation: us-modal-out .3s;
+  opacity: 0;
 }
 
-@keyframes us-modal-in {
-  0% {
-    transform: translate3d(0, -20px, 0);
-    opacity: 0;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes us-modal-out {
-  0% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(0, -20px, 0);
-    opacity: 0;
-  }
+.us-modal-enter .us-modal__container,
+.us-modal-leave-active .us-modal__container {
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
 }
