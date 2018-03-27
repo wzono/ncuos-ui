@@ -40,9 +40,7 @@
   }
   &__content {
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    word-wrap: break-all;
     font-size: 14px;
     line-height: 21px;
     margin: 0;
