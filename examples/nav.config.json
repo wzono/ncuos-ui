@@ -38,9 +38,14 @@
           "path": "/modal"
         },
         {
-          "desc": "Notification 消息",
+          "desc": "Notification 通知",
           "name": "notification",
           "path": "/notification"
+        },
+        {
+          "desc": "Message 消息",
+          "name": "message",
+          "path": "/message"
         }
       ]
     }
