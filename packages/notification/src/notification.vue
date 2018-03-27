@@ -9,11 +9,11 @@
       @click="click"
       role="alert"
     >
-      <i
-        class="us-notification__icon"
-        :class="[ typeClass, iconClass ]"
-        v-if="type || iconClass">
-      </i>
+      <i v-if="type !== 'default'" class="us-icon fa" :class="[
+        {'fa-check-circle': type === 'success'},
+        {'fa-info-circle': type === 'info'},
+        {'fa-exclamation-circle': type === 'warning'},
+        {'fa-times-circle': type === 'error'}, `us-icon-${type}`]"></i>
       <div class="us-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
         <h2 class="us-notification__title" v-text="title"></h2>
         <div class="us-notification__content" v-show="message">
@@ -57,7 +57,7 @@
     },
     computed: {
       typeClass() {
-        return this.type && typeMap[this.type] ? `el-icon-${ typeMap[this.type] }` : ''
+        return this.type && typeMap[this.type] ? `us-icon-${ typeMap[this.type] }` : ''
       },
       horizontalClass() {
         return this.position.indexOf('right') > -1 ? 'right' : 'left'

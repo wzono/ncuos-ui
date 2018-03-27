@@ -1,48 +1,64 @@
-.message {
-  font-size: 12px;
-  position: fixed;
-  z-index: 1010;
-  width: 100%;
-  top: 16px;
-  left: 0;
+.us-message {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  .us-message {
-    max-width: 100%;
-    margin: 0 8px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
-    background-color: #fff;
-    position: relative;
-    z-index: 2019;
-    display: flex;
-    &__content {
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin-right: 16px;
-      .icon {
-        margin-right: 8px;
-        &.icon__warning {
-          color: #f90;
-        }
-        &.icon__success {
-          color: #19be6b;
-        }
-        &.icon__info {
-          color: #2d8cf0;
-        }
-        &.icon__error {
-          color: #ed3f14;
-        }
-      }
-    }
-    &__close {
-      cursor: pointer;
-      user-select: none;
+  justify-content: space-between;
+  width: 330px;
+  padding: 14px 26px 14px 13px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ebeef5;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
+  overflow: hidden;
+  z-index: 2018;
+  &.right {
+    right: 16px;
+  }
+  &.left {
+    left: 16px;
+  }
+  p {
+    margin: 0;
+  }
+  .us-icon-success {
+    color: #67c23a;
+  }
+
+  .us-icon-error {
+    color: #f56c6c;
+  }
+
+  .us-icon-info {
+    color: #909399;
+  }
+
+  .us-icon-warning {
+    color: #e6a23c;
+  }
+  &__group {
+    margin-left: 13px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #303133;
+    margin: 0;
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 6px 0 0;
+    color: #606266;
+    text-align: justify;
+  }
+  &__control {
+    color: #909399;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    &:hover {
+      color: #333;
     }
   }
 }
