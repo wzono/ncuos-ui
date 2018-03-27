@@ -1,24 +1,28 @@
 <template>
-  <transition name="modal">
-    <div class="modal-mask">
-      <div class="modal-wrapper" @click.self="$emit('close')">
-        <div class="modal-container">
-          <div class="modal-header">
+  <transition name="us-modal">
+    <div class="us-modal__mask">
+      <div class="us-modal__wrapper" @click.self="$emit('close')">
+        <div class="us-modal__container">
+          <div class="us-modal__header">
             <slot name="header">
-              <h3>标题</h3>
+              标题
             </slot>
-            <h3 class="close" @click="$emit('close')">&times;</h3>
+            <div class="us-modal__close" @click="$emit('close')">&times;</div>
           </div>
-          <div class="modal-body">
+          <div class="us-modal__body">
             <slot name="body">
-              模态框框体
+              <p>模态框内容</p>
+              <p>模态框内容</p>
+              <p>模态框内容</p>
             </slot>
           </div>
-          <div class="modal-footer">
+          <div class="us-modal__footer">
             <slot name="footer">
-              <h6>默认Footer</h6>
-              <button class="modal-default-button" @click="$emit('close')">
-                OK
+              <button @click="$emit('close')">
+                取消
+              </button>
+              <button @click="$emit('close')">
+                确定
               </button>
             </slot>
           </div>
@@ -30,6 +34,12 @@
 
 <script>
 export default {
-  name: 'us-modal'
+  name: 'us-modal',
+  props: {
+    title: {
+      type: String,
+      default: '标题'
+    }
+  }
 }
 </script>
