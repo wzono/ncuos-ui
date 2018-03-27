@@ -20,6 +20,7 @@
   <div class="layout">
   <!-- 外面两层 demo-display 和 layout 记得加上 -->
     <us-button @click="showModal = true">打开Modal</us-button>
+    <us-button @click="$message({message: 'shit', type: 'fuck', duration: 10000})">打开Message</us-button>
     <us-modal title="示例标题" v-if="showModal" @close="showModal = false">
       <template slot="body">
         <p>示例内容十五字</p>

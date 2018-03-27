@@ -1,8 +1,12 @@
+// 引入Font Awesome
+import 'font-awesome/css/font-awesome.min.css'
+
 // 在这里import组件
 import Button from 'packages/button/index'
 import { Col, Row } from 'packages/grid/index'
 import Notification from 'packages/notification/index'
 import Modal from 'packages/modal/index'
+import Message from 'packages/message/index'
 
 // 在这里声明组件
 const components = [
@@ -23,7 +27,7 @@ const install = function (Vue, opts = {}) {
   // Vue.prototype.$alert = MessageBox.alert;
   // Vue.prototype.$confirm = MessageBox.confirm;
   // Vue.prototype.$prompt = MessageBox.prompt;
-  // Vue.prototype.$message = Message;
+  Vue.prototype.$message = Message
   Vue.prototype.$notify = Notification
 }
 

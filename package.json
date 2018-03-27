@@ -13,14 +13,15 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "font-awesome": "^4.7.0",
     "highlight.js": "^9.12.0",
     "markdown-it": "^6.1.1",
     "markdown-it-anchor": "^2.5.0",
     "markdown-it-container": "^2.0.0",
     "vue": "^2.5.2",
     "vue-markdown-loader": "^2.4.0",
-    "vue-router": "^3.0.1",
-    "cheerio": "^1.0.0-rc.2"
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
