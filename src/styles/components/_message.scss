@@ -1,0 +1,48 @@
+.message {
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .us-message {
+    max-width: 100%;
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    position: relative;
+    z-index: 2019;
+    display: flex;
+    &__content {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 16px;
+      .icon {
+        margin-right: 8px;
+        &.icon__warning {
+          color: #f90;
+        }
+        &.icon__success {
+          color: #19be6b;
+        }
+        &.icon__info {
+          color: #2d8cf0;
+        }
+        &.icon__error {
+          color: #ed3f14;
+        }
+      }
+    }
+    &__close {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

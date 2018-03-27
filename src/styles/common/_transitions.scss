@@ -30,3 +30,11 @@
 }
 
 // Message组件
+
+.us-messagebox-enter .message,
+.us-messagebox-enter-active .message,
+.us-messagebox-leave .message,
+.us-messagebox-leave-active .message {
+  transform: translate3d(0, -20px, 0);
+  opacity: 0;
+}
