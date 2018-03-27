@@ -1,29 +1,29 @@
 <template>
   <transition name="us-messagebox">
     <div
-      :class="['us-message', customClass, horizontalClass]"
+      :class="['us-message']"
       v-show="visible"
       :style="positionStyle"
       @mouseenter="clearTimer()"
       @mouseleave="startTimer()"
       @click="click"
-      role="alert"
     >
-      <i
-        class="us-message__icon"
-        :class="[ typeClass, iconClass ]"
-        v-if="type || iconClass">
-      </i>
-      <div class="us-message__group" :class="{ 'is-with-icon': typeClass || iconClass }">
-        <h2 class="us-message__title" v-text="title"></h2>
+      <div class="us-message__group" :class="{ 'is-with-icon': typeClass || iconClass }">  
         <div class="us-message__content" v-show="message">
           <slot>
-            <p v-if="!dangerouslyUseHTMLString">{{ message }}</p>
-            <p v-else v-html="message"></p>
+            <p>
+              <i v-if="type !== 'default'" class="us-icon fa" :class="[
+                {'fa-check-circle': type === 'success'},
+                {'fa-info-circle': type === 'info'},
+                {'fa-exclamation-circle': type === 'warning'},
+                {'fa-times-circle': type === 'error'}, `us-icon-${type}`]">
+              </i>
+              <span>{{ message }}</span>
+            </p>
           </slot>
         </div>
       </div>
-      <div class="us-message__control" v-if="showClose" @click.stop="close">&times;</div>
+      <span class="us-message__control" v-if="showClose" @click.stop="close">&times;</span>
     </div>
   </transition>
 </template>
@@ -39,28 +39,22 @@
     data() {
       return {
         visible: false,
-        title: '',
         message: '',
         duration: 4500,
         type: '',
         showClose: true,
-        customClass: '',
         iconClass: '',
         onClose: null,
         onClick: null,
         closed: false,
         verticalOffset: 0,
         timer: null,
-        dangerouslyUseHTMLString: false,
         position: 'top-right'
       }
     },
     computed: {
       typeClass() {
-        return this.type && typeMap[this.type] ? `el-icon-${ typeMap[this.type] }` : ''
-      },
-      horizontalClass() {
-        return this.position.indexOf('right') > -1 ? 'right' : 'left'
+        return this.type && typeMap[this.type] ? `us-icon-${ typeMap[this.type] }` : ''
       },
       verticalProperty() {
         return /^top-/.test(this.position) ? 'top' : 'bottom'
