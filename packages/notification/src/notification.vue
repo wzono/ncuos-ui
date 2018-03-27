@@ -15,7 +15,9 @@
         {'fa-exclamation-circle': type === 'warning'},
         {'fa-times-circle': type === 'error'}, `us-icon-${type}`]"></i>
       <div class="us-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
-        <h2 class="us-notification__title" v-text="title"></h2>
+        <h2 class="us-notification__title">
+          {{ title }}
+        </h2>
         <div class="us-notification__content" v-show="message">
           <slot>
             <p v-if="!dangerouslyUseHTMLString">{{ message }}</p>
