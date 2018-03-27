@@ -1,8 +1,8 @@
 {
   "开发指南": [
     {
-      "name": "guid",
-      "path": "/guid",
+      "name": "guide",
+      "path": "/guide",
       "desc": "介绍"
     },
     {

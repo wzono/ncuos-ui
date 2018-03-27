@@ -6,8 +6,8 @@
     </div>
     <div class="separate-panel">
       <div class="about">
-        <router-link :to="{name: 'giud'}">开始使用</router-link>
-        <a class="btn-github" href="#">Coding</a>
+        <router-link :to="{name: 'guide'}">开始使用</router-link>
+        <a class="btn-github" href="https://github.com/wingsico/ncuos-ui">GitHub</a>
       </div>
     </div>
   </div>
