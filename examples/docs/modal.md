@@ -4,6 +4,11 @@
       return {
         showModal: false
       }
+    },
+    methods: {
+      alert () {
+        alert('通过Slot触发自定义事件!')
+      }
     }
   }
 </script>
@@ -20,11 +25,14 @@
   <div class="layout">
   <!-- 外面两层 demo-display 和 layout 记得加上 -->
     <us-button @click="showModal = true">打开Modal</us-button>
-    <us-modal title="示例标题" v-if="showModal" @close="showModal = false">
+    <us-modal title="示例标题" v-if="showModal" @fuck="alert" @close="showModal = false">
       <template slot="body">
         <p>示例内容十五字</p>
         <p>示例内容十五字</p>
         <p>示例内容十五字</p>
+      </template>
+      <template slot="footer">
+        <button @click="showModal = false">自定义</button>
       </template>
     </us-modal>
   </div>

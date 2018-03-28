@@ -25,22 +25,23 @@
     margin: 0;
   }
   .us-icon {
-    font-size: 36px;
+    line-height: 22px;
+    font-size: 22px;
   }
   .us-icon-success {
-    color: #67c23a;
+    color: $success;
   }
 
   .us-icon-error {
-    color: #f56c6c;
+    color: $error;
   }
 
   .us-icon-info {
-    color: #2d8cf0;
+    color: $info;
   }
 
   .us-icon-warning {
-    color: #e6a23c;
+    color: $warning;
   }
   &__group {
     margin-left: 13px;
