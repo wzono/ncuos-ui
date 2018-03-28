@@ -42,6 +42,7 @@ $yellow:  #e6a23c !default;
 $green:   #67c23a !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$black:   #1c2438 !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -178,9 +179,25 @@ $transition-collapse:         height .35s ease !default;
 
  */
 
- // 组件相关
+ // 颜色样式
+$border-color: $gray-300 !default;
+$box-shadow: 0 1px 3px rgba(0,0,0,.3) !default;
 
- //Modal
+// 形态样式
+$border-radius: 6px !default;
+
+// 组件过渡样式
+$transition-fade: all .3s ease !default;
+
+// 组件相关
+
+//Modal
  $us-modal-max-width: 600px;
  $us-modal-mask-bkg: rgba(0, 0, 0, .5);
- 
+ $us-modal-container-bkg: $white;
+ $us-modal-margin: 10px;
+ $us-modal-margin-top: 30px;
+ $us-modal-radius: 6px;
+ $us-modal-box-shadow: $box-shadow;
+ $us-modal-transition: $transition-fade;
+ $us-modal-padding: 14px 16px;

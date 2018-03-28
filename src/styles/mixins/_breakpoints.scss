@@ -121,3 +121,13 @@
     }
   }
 }
+
+
+// Media, 为Modal组件设计
+@mixin media-modal-autoresize($max) {
+  @media (max-width: $max) {
+    width: auto;
+    margin: $us-modal-margin;
+    margin-top: $us-modal-margin-top;
+  }
+}

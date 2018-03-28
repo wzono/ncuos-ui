@@ -1,0 +1,17 @@
+// 形态
+
+// 边框样式
+@mixin make-border($position, $size, $style, $color: $border-color) {
+  @if $position {
+    border-#{$position}: #{$size}px $style $color;
+  } @else {
+    border: #{size}px $style $border-color
+  }
+}
+
+// 设置文字溢出省略
+@mixin make-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
