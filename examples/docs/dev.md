@@ -71,3 +71,14 @@ npm run start
   ```html
     
   ```
+
+### 分支规范
+
+- 新组件开发请新开分支:`feature-组件名`
+- 非组件内功能请开分支：`feature-featureName`
+- bug修复分支：`bugfix-组件名-bugInfo`|  `bugfix-bugInfo`
+> 若为组件内bug请在分支名加上具体的组件名，若非组件bug则不需
+
+在单个组件分支测试无问题可合并到develop分支，确定无兼容或其他迷之问题可合并到master分支
+
+具体规范请依照家园工作室git飞行手册

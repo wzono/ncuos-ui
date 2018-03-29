@@ -1,7 +1,7 @@
 <template>
   <button @click="$emit('click')" class="us-button" :disabled="disabled" :class="[
     'us-button--type-'+type,
-    {'is-plain': plain, 'is-disabled': disabled ,'is-block':block},
+    {'is-plain': plain, 'is-disabled': disabled ,'is-block':block,'is-round':round},
     'us-button--size-'+size
     ]">
     <slot></slot>
@@ -27,7 +27,8 @@ export default {
     },
     plain: Boolean,
     disabled: Boolean,
-    block:Boolean
+    block:Boolean,
+    round:Boolean
   },
   data() {
     return {};
