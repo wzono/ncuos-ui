@@ -1,29 +1,36 @@
 .us-button {
-    border-radius: 3px;
+  isplay: inline-block;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border-radius: 4px;
   &--type {
     &-default {
-      border: 1px solid #adb5bd;
-      background-color: white;
+      @include button-normal(#1f2d3d, #fff, 1px, #bfcbd9);
     }
     &-primary {
-      border: 1px solid blue;
-      background-color: blue;
+      @include button-normal(#fff, #3faaf5, 1px, #3faaf5);
     }
     &-danger {
-      border: 1px solid pink;
-      background-color: pink;
+      @include button-normal(#fff, #ff4949, 1px, #ff4949);
     }
   }
   &--size {
-    &-small {}
-    &-normal {
-      height: 30px;
-      width: 70px;
+    &-small {
+      @include button-size(8px, 16px, 14px, 1)
     }
-    &-large {}
+    &-normal {
+      @include button-size(12px, 20px, 14px, 1)
+    }
+    &-large {
+      @include button-size(14px, 22px, 16px, 1.2)
+    }
   }
   &.is-plain {
-    background-color: white;
+    background: rgba(63, 170, 245, .05);
+    color: #3faaf5;
   }
-  //   感觉怪怪的。。。待测试
+  &.is-block {
+    width: 100%;
+  }
 }

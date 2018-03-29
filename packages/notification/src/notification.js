@@ -76,7 +76,7 @@ Notification.close = function(id, userOnClose) {
         parseInt(instances[i].dom.style[instance.verticalProperty], 10) - removedHeight - 16 + 'px'
     }
   }
-};
+}
 
 Notification.closeAll = function() {
   for (let i = instances.length - 1; i >= 0; i--) {

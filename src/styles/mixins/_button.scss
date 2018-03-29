@@ -1,0 +1,27 @@
+@mixin button-normal($font-color, $background, $border-width, $border-color) {
+  background: $background;
+  border: $border-width solid $border-color;
+  color: $font-color;
+  // @if()
+  &:hover {
+    opacity: .7;
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+}
+@mixin button-plain($font-color, $background, $border-width, $border-color){
+  background: rgba(63,170,245,.05);
+  border: $border-width solid $border-color;
+  color: $border-color;
+  &:hover {
+    background: $background;
+    color: $color;
+  }
+}
+@mixin button-size($padding-y, $padding-x, $font-size, $line-height) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+  line-height: $line-height;
+}
