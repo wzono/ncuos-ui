@@ -1,18 +1,18 @@
 .us-button {
-  isplay: inline-block;
+  display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
   box-sizing: border-box;
   border-radius: 4px;
   &--type {
     &-default {
-      @include button-normal(#1f2d3d, #fff, 1px, #bfcbd9);
+      @include button-normal($black, $white, 1px, $gray-400);
     }
     &-primary {
-      @include button-normal(#fff, #3faaf5, 1px, #3faaf5);
+      @include button-normal($white, $blue, 1px, $blue);
     }
     &-danger {
-      @include button-normal(#fff, #ff4949, 1px, #ff4949);
+      @include button-normal($white, $red, 1px, $red);
     }
   }
   &--size {
@@ -28,9 +28,10 @@
   }
   &.is-plain {
     background: rgba(63, 170, 245, .05);
-    color: #3faaf5;
+    color: $blue;
   }
   &.is-block {
+    display: block;
     width: 100%;
   }
   &.is-round{

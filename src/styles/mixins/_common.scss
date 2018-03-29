@@ -2,7 +2,7 @@
 
 // 边框样式
 @mixin make-border($position, $size, $style, $color: $border-color) {
-  @if $position {
+  @if $position != all {
     border-#{$position}: #{$size}px $style $color;
   } @else {
     border: #{size}px $style $border-color
