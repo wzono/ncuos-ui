@@ -1,5 +1,5 @@
 .us-notification {
-  @include make-border();
+  @include make-border(all, 1, solid);
   display: flex;
   width: 300px;
   padding: 14px 26px 14px 13px;
