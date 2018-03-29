@@ -1,10 +1,13 @@
 <template>
   <button @click="$emit('click')" class="us-button" :disabled="disabled" :class="[
     'us-button--type-'+type,
-    {'is-plain': plain, 'is-disabled': disabled ,'is-block':block},
+    {'is-plain': plain, 'is-disabled': disabled ,'is-block':block,'only-icon':iconOnly},
     'us-button--size-'+size
     ]">
-    <slot></slot>
+    <i v-if="icon !== 'default'" class="us-icon fa" :class="[icon]">
+    </i>
+    <slot>
+    </slot>
   </button>
 </template>
 <script>
@@ -16,18 +19,19 @@ export default {
       type: String,
       default: "default"
     },
-    // 
+    //
     size: {
       type: String,
       default: "normal"
     },
     icon: {
       type: String,
-      default: ""
+      default: "default"
     },
     plain: Boolean,
     disabled: Boolean,
-    block:Boolean
+    block: Boolean,
+    iconOnly:Boolean
   },
   data() {
     return {};

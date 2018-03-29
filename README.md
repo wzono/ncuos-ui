@@ -1,6 +1,6 @@
 # NCUOS-UI
 
-`NCUOS-UI` 基于 `Vue.js 2.0` 的前段 UI 组件库，主要用于快速开发家园工作室相关产品
+`NCUOS-UI` 基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发家园工作室相关产品
 
 <p align="center">
   <a href="https://coding.net/u/Futurer/p/ncuos-ui/git">

@@ -1,5 +1,5 @@
 .us-button {
-  isplay: inline-block;
+  display: inline-block;
   cursor: pointer;
   -webkit-appearance: none;
   box-sizing: border-box;
@@ -26,11 +26,22 @@
       @include button-size(14px, 22px, 16px, 1.2)
     }
   }
+  &.us-icon{
+    // co
+    margin-right: 5px;
+  }
   &.is-plain {
     background: rgba(63, 170, 245, .05);
     color: #3faaf5;
   }
   &.is-block {
     width: 100%;
+  }
+  &.only-icon{
+    width: 50px;
+    height: 50px;
+    padding:0;
+    overflow: hidden;
+    border-radius: 100%;
   }
 }
