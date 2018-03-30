@@ -1,60 +1,10 @@
 .us-message {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px;
-  border-radius: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ebeef5;
-  position: fixed;
-  background-color: #fff;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
-  overflow: hidden;
-  z-index: 2018;
-  left: 50%;
-  transform: translateX(-50%);
-  max-width: 100%;
+  @include make-message-frame();
   p {
     margin: 0;
   }
   .us-icon {
-    margin-right: 8px;
+    @include make-message-icon();
   }
-  .us-icon-success {
-    color: #67c23a;
-  }
-
-  .us-icon-error {
-    color: #f56c6c;
-  }
-
-  .us-icon-info {
-    color: #2d8cf0;
-  }
-
-  .us-icon-warning {
-    color: #e6a23c;
-  }
-  &__group {
-    margin-left: 13px;
-  }
-  &__content {
-    width: 100%;
-    word-wrap: break-all;
-    font-size: 14px;
-    line-height: 21px;
-    margin: 0;
-    color: #606266;
-    text-align: justify;
-    margin-right: 18px;
-  }
-  &__control {
-    color: #909399;
-    // width: 10px;
-    // height: 10px;
-    cursor: pointer;
-    &:hover {
-      color: #333;
-    }
-  }
+  @include make-message-components();
 }

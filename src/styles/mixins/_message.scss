@@ -1,0 +1,49 @@
+@mixin make-message-frame() {
+  @include make-border(all, 1px, solid, #ebeef5);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
+  overflow: hidden;
+  z-index: 2018;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+}
+
+@mixin make-message-icon() {
+  margin-right: 8px;
+  $styles: success error info warning;
+  @each $style in $styles {
+    &.us-icon-#{$style} {
+      color: map-get($theme-colors, $style);
+    }
+  }
+}
+
+@mixin make-message-components() {
+  &__group {
+    margin-left: 13px;
+  }
+  &__content {
+    width: 100%;
+    word-wrap: break-all;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    color: #606266;
+    text-align: justify;
+    margin-right: 18px;
+  }
+  &__control {
+    color: #909399;
+    cursor: pointer;
+    &:hover {
+      color: #333;
+    }
+  }
+}
