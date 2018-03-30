@@ -1,16 +1,6 @@
 .us-notification {
-  display: flex;
-  width: 300px;
-  padding: 14px 26px 14px 13px;
-  border-radius: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ebeef5;
-  position: fixed;
-  background-color: #fff;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-  transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
-  overflow: hidden;
-  z-index: 2018;
+  @include make-border(all, 1, solid);
+  @include make-notification-frame();
   @media (max-width: 300px) {
     width: auto;
     margin: auto 5px;
@@ -25,51 +15,7 @@
     margin: 0;
   }
   .us-icon {
-    line-height: 22px;
-    font-size: 22px;
+    @include make-notification-icon();
   }
-  .us-icon-success {
-    color: $success;
-  }
-
-  .us-icon-error {
-    color: $error;
-  }
-
-  .us-icon-info {
-    color: $info;
-  }
-
-  .us-icon-warning {
-    color: $warning;
-  }
-  &__group {
-    margin-left: 13px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  &__title {
-    font-weight: 700;
-    font-size: 16px;
-    color: #303133;
-    margin: 0;
-  }
-  &__content {
-    font-size: 14px;
-    line-height: 21px;
-    color: #606266;
-    text-align: justify;
-  }
-  &__control {
-    color: #909399;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
-    position: absolute;
-    right: 16px;
-    &:hover {
-      color: #333;
-    }
-  }
+  @include make-notification-components();
 }

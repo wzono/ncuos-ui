@@ -1,10 +1,8 @@
-.us-notification {
-  @include make-border(all, 1, solid);
+@mixin make-notification-frame() {
   display: flex;
   width: 300px;
   padding: 14px 26px 14px 13px;
   border-radius: 8px;
-  box-sizing: border-box;
   border: 1px solid #ebeef5;
   position: fixed;
   background-color: #fff;
@@ -12,4 +10,47 @@
   transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
   overflow: hidden;
   z-index: 2018;
+}
+
+@mixin make-notification-icon() {
+  line-height: 22px;
+  font-size: 22px;
+  $styles: success error info warning;
+  @each $style in $styles {
+    &.us-icon-#{$style} {
+      color: map-get($theme-colors, $style);
+    }
+  }
+}
+
+@mixin make-notification-components() {
+  &__group {
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #303133;
+    margin: 0;
+  }
+  &__content {
+    font-size: 14px;
+    line-height: 21px;
+    color: #606266;
+    text-align: justify;
+  }
+  &__control {
+    color: #909399;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    &:hover {
+      color: #333;
+    }
+  }
 }
