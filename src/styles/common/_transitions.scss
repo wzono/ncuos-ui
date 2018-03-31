@@ -9,9 +9,15 @@
     transform: translateX(-100%);
   }
 }
-
 .us-notification-fade-leave-active {
-  opacity: 0;
+  &.right {
+    right: 0;
+    transform: translateX(100%);
+  }
+  &.left {
+    left: 0;
+    transform: translateX(-100%);
+  }
 }
 
 // Modal组件

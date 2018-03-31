@@ -1,7 +1,7 @@
 <template>
   <transition name="us-notification-fade">
     <div
-      :class="['us-notification', type == 'default' ? '' : `us-notification-${type}`, customClass, horizontalClass]"
+      :class="['us-notification', type === 'default' ? '' : `us-notification-${type}`, horizontalClass]"
       v-show="visible"
       :style="positionStyle"
       @mouseenter="clearTimer()"
@@ -9,12 +9,15 @@
       @click="click"
       role="alert"
     >
-      <i v-if="type !== 'default'" class="us-icon fa" :class="[
-        {'fa-check-circle': type === 'success'},
-        {'fa-info-circle': type === 'info'},
-        {'fa-exclamation-circle': type === 'warning'},
-        {'fa-times-circle': type === 'error'}, `us-icon-${type}`]"></i>
-      <div class="us-notification__group" :class="{ 'is-with-icon': typeClass || iconClass }">
+      <i v-if="type !== 'default'" class="us-icon" :class="[
+        customIcon,
+        {'fa': customIcon === ''},
+        {'fa-check-circle': type === 'success' & customIcon === ''},
+        {'fa-info-circle': type === 'info' & customIcon === ''},
+        {'fa-exclamation-circle': type === 'warning' & customIcon === ''},
+        {'fa-times-circle': type === 'error' & customIcon === ''}, `us-icon-${type}`]">
+      </i>
+      <div class="us-notification__group">
         <h2 class="us-notification__title">
           {{ title }}
         </h2>
@@ -43,11 +46,10 @@
         visible: false,
         title: '',
         message: '',
-        duration: 4500,
+        duration: 3000,
         type: 'default',
         showClose: true,
-        customClass: '',
-        iconClass: '',
+        customIcon: '',
         onClose: null,
         onClick: null,
         closed: false,
