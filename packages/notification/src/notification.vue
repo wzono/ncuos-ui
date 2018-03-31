@@ -1,7 +1,7 @@
 <template>
   <transition name="us-notification-fade">
     <div
-      :class="['us-notification', customClass, horizontalClass]"
+      :class="['us-notification', type == 'default' ? '' : `us-notification-${type}`, customClass, horizontalClass]"
       v-show="visible"
       :style="positionStyle"
       @mouseenter="clearTimer()"
@@ -44,7 +44,7 @@
         title: '',
         message: '',
         duration: 4500,
-        type: '',
+        type: 'default',
         showClose: true,
         customClass: '',
         iconClass: '',

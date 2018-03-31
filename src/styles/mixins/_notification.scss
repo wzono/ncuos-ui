@@ -1,8 +1,9 @@
+$styles: success error info warning;
 @mixin make-notification-frame() {
   display: flex;
   width: 300px;
   padding: 14px 26px 14px 13px;
-  border-radius: 8px;
+  border-radius: 3px;
   border: 1px solid #ebeef5;
   position: fixed;
   background-color: #fff;
@@ -10,12 +11,20 @@
   transition: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s;
   overflow: hidden;
   z-index: 2018;
+  @each $style in $styles {
+    &.us-notification-#{$style} {
+      color: $white !important;
+      background-color: map-get($theme-colors, $style);
+      * {
+        color: $white !important;
+      }
+    }
+  }
 }
 
 @mixin make-notification-icon() {
   line-height: 22px;
   font-size: 22px;
-  $styles: success error info warning;
   @each $style in $styles {
     &.us-icon-#{$style} {
       color: map-get($theme-colors, $style);
