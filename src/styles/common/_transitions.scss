@@ -36,10 +36,18 @@
 }
 
 // Message组件
+// .us-messagebox-enter {
+//   opacity: 0;
+// }
+
+// .us-messagebox-leave-active {
+//   opacity: 0;
+// }
 .us-messagebox-enter {
   opacity: 0;
+  transform: translateY(100%);
 }
-
 .us-messagebox-leave-active {
   opacity: 0;
+  transform: translateY(100%);
 }
