@@ -28,7 +28,7 @@ const install = function (Vue, opts = {}) {
   // Vue.prototype.$confirm = MessageBox.confirm;
   // Vue.prototype.$prompt = MessageBox.prompt;
   Vue.prototype.$message = Message
-  Vue.prototype.$notify = Notification
+  Vue.prototype.$notification = Notification
 }
 
 // istanbul ignore if

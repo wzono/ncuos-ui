@@ -1,9 +1,10 @@
+$styles: success error info warning;
 @mixin make-message-frame() {
   @include make-border(all, 1px, solid, #ebeef5);
   display: flex;
   justify-content: space-between;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 2px;
   position: fixed;
   background-color: #fff;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
@@ -13,11 +14,19 @@
   left: 50%;
   transform: translateX(-50%);
   max-width: 100%;
+  @each $style in $styles {
+    &.us-message-#{$style} {
+      color: $white !important;
+      background-color: map-get($theme-colors, $style);
+      * {
+        color: $white !important;
+      }
+    }
+  }
 }
 
 @mixin make-message-icon() {
   margin-right: 8px;
-  $styles: success error info warning;
   @each $style in $styles {
     &.us-icon-#{$style} {
       color: map-get($theme-colors, $style);
