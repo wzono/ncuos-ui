@@ -7,13 +7,15 @@ import { Col, Row } from 'packages/grid/index'
 import Notification from 'packages/notification/index'
 import Modal from 'packages/modal/index'
 import Message from 'packages/message/index'
+import Datetime from 'packages/datetime/index'
 
 // 在这里声明组件
 const components = [
   Modal,
   Button,
   Col,
-  Row
+  Row,
+  Datetime
 ]
 
 // Vue插件安装命令

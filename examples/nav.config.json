@@ -25,6 +25,11 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
+        },
+        {
+          "desc": "Datetime 日期选择器",
+          "name": "datetime",
+          "path": "/datetime"
         }
       ]
     },
