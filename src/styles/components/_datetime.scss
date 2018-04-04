@@ -1,0 +1,38 @@
+.us-datetime {
+  @include make-datetime-framework();
+  input {
+    @include make-datetime-input();
+    &:disabled {
+      cursor: not-allowed;
+      background-color: #ebebe4;
+      border-color: #e5e5e5;
+      box-shadow: none;
+    }
+    &.focus {
+      border-color: #3bb4f2;
+      box-shadow: 0 0 5px rgba(59, 180, 242, .3);
+    }
+  }
+  .us-datetime-close {
+    @include make-datetime-close();
+  }
+  .us-datetime-popup {
+    @include make-datetime-popup();
+    &.us-datetime-inline {
+      position: relative;
+      margin-top: 0;
+    }
+    .us-datetime__buttons {
+      @include make-buttons-wrapper();
+      button {
+        @include make-button();
+      }
+      .us-datetime__button-select {
+        background-color: #1284e7;
+      }
+      .us-datetime__button-cancel {
+        background-color: #666;
+      }
+    }
+  }
+}
