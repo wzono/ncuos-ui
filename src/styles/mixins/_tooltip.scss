@@ -1,0 +1,32 @@
+$triangles: ();
+$triangles: map_merge((
+  'top': 'bottom',
+  'bottom': 'top',
+  'left': 'right',
+  'right': 'left'
+), $triangles);
+
+
+@mixin make-triangle($position, $style) {
+  position: relative;
+  margin-#{map_get($triangles, $position)}: 5px;
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    @if $style == light {
+      border-#{$position}-color: $gray-200;
+    } @else {
+      border-#{$position}-color: $gray-800;
+    }
+    #{map_get($triangles, $position)}: -10px;
+    @if $position == top or $position == bottom {
+      left: calc(50% - 5px) !important;
+    } @else {
+      top: calc(50% - 5px) !important;
+    }
+  }
+}

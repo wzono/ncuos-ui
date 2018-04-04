@@ -25,6 +25,11 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
+        },
+        {
+          "desc": "Tooltip 轻提示",
+          "name": "tooltip",
+          "path": "/tooltip"
         }
       ]
     },
