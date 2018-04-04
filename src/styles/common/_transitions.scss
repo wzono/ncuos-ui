@@ -51,3 +51,11 @@
   opacity: 0;
   transform: translateY(100%);
 }
+// Dropdown组件
+.us-dropdown-enter {
+  opacity: 0;
+}
+
+.us-dropdown-leave-active {
+  opacity: 0;
+}

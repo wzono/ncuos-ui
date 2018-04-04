@@ -1,17 +1,11 @@
-.us-dropdown {
-  @include make-dropdown-wrapper(#fafafa, #212121);
-  .popper__arrow {
-    @include make-dropdown-arrow();
-  }
-  &[x-placement^="top"] {
-    margin-bottom: 5px;
-    .popper__arrow {
-      border-width: 5px 5px 0 5px;
-      border-color: #fafafa transparent transparent transparent;
-      bottom: -5px;
-      left: calc(50% - 5px);
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
+@mixin make-dropdown-wrapper($background, $color, $shadow: $box-shadow) {
+  width: auto;
+  background-color: $background;
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  @include make-border(all, 1px, solid);
+  box-shadow: $shadow;
 }

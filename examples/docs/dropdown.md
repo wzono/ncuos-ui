@@ -9,11 +9,14 @@
 <div class="demo-display">
   <div class="layout">
   <!-- 外面两层 demo-display 和 layout 记得加上 -->
-    <us-dropdown trigger="click" class="example" :options="{placement: 'bottom'}">
+    <us-dropdown ref="test" trigger="click" class="example" :options="{placement: 'bottom'}">
       <template slot="content">
         <us-dropdown-item>fuck you</us-dropdown-item>
-        <us-dropdown-item>fuck you2</us-dropdown-item>
+        <us-dropdown-item divided>fuck you2</us-dropdown-item>
         <us-dropdown-item>fuck you3</us-dropdown-item>
+      </template>
+      <template slot="control">
+        <a href="#">下拉菜单</a>
       </template>
     </us-dropdown>
   </div>
@@ -21,13 +24,16 @@
 
 :::demo
 ```html
-<us-dropdown trigger="click" class="example" :options="{placement: 'bottom'}">
+<us-dropdown ref="test" trigger="click" class="example" :options="{placement: 'bottom'}">
   <template slot="content">
     <us-dropdown-item>fuck you</us-dropdown-item>
-    <us-dropdown-item>fuck you2</us-dropdown-item>
+    <us-dropdown-item divided>fuck you2</us-dropdown-item>
     <us-dropdown-item>fuck you3</us-dropdown-item>
   </template>
- </us-dropdown>
+  <template slot="control">
+    <a href="#">下拉菜单</a>
+  </template>
+</us-dropdown>
 ```
 :::
 

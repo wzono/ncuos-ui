@@ -1,0 +1,23 @@
+.us-dropdown-item {
+  display: block;
+  padding: 3px 12px;
+  cursor: pointer;
+  transition: background-color .2s;
+  &:hover {
+    background-color: $gray-300;
+    transition: background-color .2s;
+  }
+  &.divided {
+    margin-bottom: 12px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      background-color: $gray-400;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
