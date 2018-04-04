@@ -7,13 +7,16 @@ import { Col, Row } from 'packages/grid/index'
 import Notification from 'packages/notification/index'
 import Modal from 'packages/modal/index'
 import Message from 'packages/message/index'
+import { Dropdown, DropdownItem } from 'packages/dropdown/index'
 
 // 在这里声明组件
 const components = [
   Modal,
   Button,
   Col,
-  Row
+  Row,
+  Dropdown,
+  DropdownItem
 ]
 
 // Vue插件安装命令

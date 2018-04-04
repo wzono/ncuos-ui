@@ -1,0 +1,19 @@
+@mixin make-dropdown-wrapper($background, $color, $shadow: $box-shadow) {
+  width: auto;
+  background-color: $background;
+  text-align: center;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  @include make-border(all, 1px, solid);
+  box-shadow: $shadow;
+}
+
+@mixin make-dropdown-arrow() {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
